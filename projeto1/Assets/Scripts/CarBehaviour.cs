@@ -13,7 +13,9 @@ public class CarBehaviour : MonoBehaviour {
 	public LightDetectorScript LeftLD;
 	public CarDetectorScript LeftCD;
 	public CarDetectorScript RightCD;
-	
+	public BlockDetectorScript RightBD;
+	public BlockDetectorScript LeftBD;
+
 
 
 	private Rigidbody m_Rigidbody;

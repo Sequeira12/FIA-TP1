@@ -3,6 +3,8 @@ using System.Collections;
 using System.Linq;
 using System;
 
+
+
 public class CarDetectorScript : MonoBehaviour
 {
 
@@ -31,44 +33,26 @@ public class CarDetectorScript : MonoBehaviour
 
 		GameObject[] cars = null;
 		GameObject closestCar = null;
-		float dist = 0;
-	
+		
+		cars = GetAllCars();
 
-
-		if (useAngle)
-		{
-			cars = GetVisibleCars();
-		}
-		else
-		{
-			cars = GetAllCars();
-		}
 
 		output = 0;
 		numObjects = cars.Length;
-
+		float min = Mathf.Infinity;
+		float distancia = 2;
 		//percorre todos os carros possiveis
 		foreach (GameObject car in cars)
 		{
-			if (dist != 0)		// se for 0 é porque é o primeiro carro
+			distancia = (transform.position - car.transform.position).magnitude;
 
-			{
-				//diferenca entre ele e o carro que está a seguir com os outros
-				if (dist < Vector3.Distance(car.transform.position, transform.position))
-				{
-					
-					dist = Vector3.Distance(car.transform.position, transform.position);
-					
-					closestCar = car;
-				}
-			}
-			else //Primeira iteracao
-			{
-				dist = Vector3.Distance(car.transform.position, transform.position);
+			if(distancia < min)
+            {
+				min = distancia;
 				closestCar = car;
-			}
-			output = 1 / (dist + 1);
+            }
 		}
+		output = distancia;
 		
 		
 	}

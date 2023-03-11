@@ -10,7 +10,4 @@ public class LightDetectorLinearScript : LightDetectorScript {
 		return output;
 	}
 
-	
-
-
 }
