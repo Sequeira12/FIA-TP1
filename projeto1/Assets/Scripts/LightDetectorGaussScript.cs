@@ -23,7 +23,7 @@ public class LightDetectorGaussScript : LightDetectorScript {
         {
             if(outp > MaxX || outp < MinX)
             {
-                outp = MinY;
+                outp = 0;
             }
         }
         //quando os limites estao ativos
