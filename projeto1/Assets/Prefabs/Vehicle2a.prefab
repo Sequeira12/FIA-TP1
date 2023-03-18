@@ -598,7 +598,7 @@ MonoBehaviour:
   ApplyThresholds: 0
   ApplyLimits: 0
   MinX: 0
-  MaxX: 0
+  MaxX: 0.25
   MinY: 0
   MaxY: 0
   output: 0
@@ -1435,8 +1435,6 @@ MonoBehaviour:
   MaxY: 0
   output: 0
   numObjects: 0
-  stdDev: 1
-  mean: 0
 --- !u!1 &5498860399777857639
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,8 +1521,6 @@ MonoBehaviour:
   MaxY: 0
   output: 0
   numObjects: 0
-  stdDev: 1
-  mean: 0
 --- !u!1 &8063570606774929682
 GameObject:
   m_ObjectHideFlags: 0
