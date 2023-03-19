@@ -40,7 +40,7 @@ public class CarDetectorScript : MonoBehaviour
 		output = 0;
 		numObjects = cars.Length;
 		float min = Mathf.Infinity;
-		float distancia = 2;
+		float distancia = 0;
 		//percorre todos os carros possiveis
 		foreach (GameObject car in cars)
 		{
@@ -52,10 +52,9 @@ public class CarDetectorScript : MonoBehaviour
 				closestCar = car;
             }
 		}
-		output = distancia;
-		
-		
-	}
+        print("distancia= " + min);
+        output = min;
+    }
 	public virtual float GetOutput() { throw new NotImplementedException(); }
 
 	// Retorna todos os objetos com a tag "CarToFollow". A tag do sensor não e tida em conta

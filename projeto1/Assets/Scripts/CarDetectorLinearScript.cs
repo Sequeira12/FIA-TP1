@@ -12,7 +12,10 @@ public class CarDetectorLinearScript : CarDetectorScript {
 	{
 
         //YOUR CODE HERE
-
+        if (this.name == "CarDetectorLinearLeft")
+            print("Left: " + output);
+        if (this.name == "CarDetectorLinearRight")
+            print("Right: " + output);
         return output;
 	}
 
