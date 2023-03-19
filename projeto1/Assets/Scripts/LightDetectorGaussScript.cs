@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿/*
+Bruno Sequeira
+Rui Santos
+Tomás Dias
+ */
+
+using UnityEngine;
 using System.Collections;
 using System.Linq;
 using System;

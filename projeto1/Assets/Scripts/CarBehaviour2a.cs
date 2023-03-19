@@ -1,4 +1,10 @@
-﻿using UnityEngine;
+﻿/*
+Bruno Sequeira
+Rui Santos
+Tomás Dias
+ */
+
+using UnityEngine;
 using System.Collections;
 
 public class CarBehaviour2a : CarBehaviour {

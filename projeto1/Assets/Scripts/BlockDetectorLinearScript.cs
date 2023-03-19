@@ -1,3 +1,8 @@
+/*
+Bruno Sequeira
+Rui Santos
+Tomás Dias
+ */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
